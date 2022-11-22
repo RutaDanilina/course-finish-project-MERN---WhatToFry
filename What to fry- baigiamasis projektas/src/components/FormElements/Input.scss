@@ -1,0 +1,46 @@
+@import '../../../src/styles/base';
+
+.form-control {
+  margin: 1rem auto;
+
+  input, textarea {
+    width: 100%;
+    font: inherit;
+    border: 1px solid rgb(0, 0, 0);
+    background: #f8f8f863;
+    padding: 0.15rem 0.25rem;
+    text-align: center;
+    display: block;
+    color: $pri;
+    padding: 8px;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: $blc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+}
+
+
+.form-control--invalid {
+
+   p {
+    color: $thr;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 3px;
+  }
+
+  input, textarea {
+    border-color: $thr;
+    background: #a9a9a9ae;
+    color: $thr;
+
+  }
+}

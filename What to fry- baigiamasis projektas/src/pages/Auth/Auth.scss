@@ -1,0 +1,57 @@
+@import '../../styles/base';
+
+
+.authentication {
+  width: 90%;
+  max-width: 20rem;
+  margin: 7rem auto;
+  padding: 1rem 1rem 2.5rem 1rem;
+  text-align: center;
+
+  &__header {
+    color: white;
+    text-align: center;
+  }
+
+  form {
+    margin-bottom: 1rem;
+  }
+}
+
+.main-auth-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: $blc;
+  color: $pri;
+  border: 1px solid $pri;
+  letter-spacing: .8px;
+
+  &:hover {
+    transition:  ease .8s;
+    background-color: $pri;
+    color: $blc;
+    border: 1px solid $blc;
+    letter-spacing: .5px;
+  }
+}
+
+.scd-auth-btn {
+  margin: 0 1rem;
+  padding: .3rem;
+  color: $thr;
+  border: 1px solid $thr;
+  font-size: 8px;
+  letter-spacing: 1px;
+  background-color: $blc;
+  position: absolute;
+
+  right: 0rem;
+  bottom: 1rem;
+
+  &:hover {
+    transition: ease .8s;
+    background-color: $thr;
+    color: white;
+    border: 1px solid white;
+  }
+}

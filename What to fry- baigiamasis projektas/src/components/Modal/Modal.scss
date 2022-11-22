@@ -1,0 +1,66 @@
+@import '../../styles/base';
+
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 22vh;
+  left: 10%;
+  width: 60%;
+  color: $pri;
+  background: rgba(27, 27, 27, 0.559);
+  border: 1px solid $thr;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  text-align: center;
+
+    &__header {
+      width: 100%;
+      padding: 2rem 0.5rem 0.5rem 0.5rem;
+      background: $blc;
+      color: $pri;
+    }
+    
+    &__header h2 {
+      margin: 0.5rem;
+    }
+    
+    &__content {
+      padding: 0.5rem;
+    }
+    
+    &__footer {
+      margin: 0 auto;
+      width: 30%;
+      padding: 0.5rem 1rem 2rem 1rem;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+
+.modal-enter {
+  transform: translateY(-10rem);
+  opacity: 0;
+
+  &-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 200ms;
+  }
+}
+
+.modal-exit {
+  transform: translateY(0);
+  opacity: 1;
+
+  &-active {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: all 200ms;
+  }
+}

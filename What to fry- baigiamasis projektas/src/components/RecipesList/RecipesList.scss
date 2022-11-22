@@ -1,0 +1,13 @@
+@import '../../styles/base';
+
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 900px;
+}

@@ -1,0 +1,32 @@
+@import '../../styles/base';
+
+.backWrapper {
+    color: $pri;
+    height: 30px;
+    width: 30px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        background-color: transparent;
+        border: none;
+    }
+
+    .toTop {
+        position: fixed;
+        bottom: 10%;
+        right: 18%;
+        background-color: transparent;
+        border: 1px solid $pri;
+
+
+        &:hover {
+            cursor: pointer;
+            background-color: transparent;    
+            color: $thr;
+            border: 1px solid $thr;
+            transition: ease-in .5s;
+        }
+    }
+}

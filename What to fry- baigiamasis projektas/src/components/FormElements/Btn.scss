@@ -1,0 +1,76 @@
+@import '../../styles/base';
+
+.button {
+  width: 100%;
+  padding: 8px;
+  background-color: $blc;
+  color: $pri;
+  border: 1px solid $pri;
+  letter-spacing: .8px;
+  margin: 3px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,&:active {
+      transition:  ease .8s;
+      background-color: $pri;
+      color: $blc;
+      border: 1px solid $blc;
+      letter-spacing: .5px;
+    }
+
+    &--inverse {
+      margin: 0 1rem;
+      padding: .3rem;
+      width: 33%;
+      color: $thr;
+      border: 1px solid $thr;
+      font-size: 8px;
+      letter-spacing: 1px;
+      background-color: $blc;
+      position: absolute;
+    
+      right: 0rem;
+      bottom: 1rem;
+
+      &:hover, &:active {
+        transition: ease .8s;
+        background-color: $thr;
+        color: white;
+        border: 1px solid white;
+      }
+    }
+
+    &--danger {
+      background: $thr;
+      border-color: $thr;
+
+      &:hover, &:active {
+        background: transparent;
+        border-color: $thr;
+        color: $thr;
+      }
+    }
+
+    &:disabled,
+    &:hover:disabled,
+    &:active:disabled {
+      background: rgba(255, 255, 255, 0.561);
+      color: #f1523a60;
+      border-color: #f1523a60;
+      cursor: not-allowed;
+    }
+
+    &--small {
+      font-size: 0.8rem;
+    }
+
+    &--big {
+      font-size: 1.5rem;
+    }
+}
+
+
+

@@ -1,0 +1,23 @@
+@import '../../styles/base';
+
+
+.side-drawer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 110;
+    width: 70%;
+    background-color: $blc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+}
+
+.side-drawer-logo {
+    height: 3rem;
+    width: 100%;
+    margin-top: 3rem;
+}

@@ -1,0 +1,106 @@
+@import '../../styles/base';
+
+.banner-wrapper {
+    width: 100%;
+    height: 70vh;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    h1 {
+        width: 100%;
+        font-size: 45px;
+        margin-bottom: 10px;
+        color: $pri;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+        animation: fadeIn 1s ease-in both;
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translate3d(0, -20%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+
+    p {
+        width: 90%;
+        font-size: 20px;
+        color: $pri;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+        margin-top: 0;
+    
+    }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: flex-start;
+
+        .btn {
+            padding: 8px 30px;
+            text-align: center;
+            background-color: $blc;
+            color: $pri;
+            border: 1px solid $pri;
+            text-transform: uppercase;
+            border-radius: 3px;
+    
+            &:hover {
+                  background-color: $pri;
+                  color: $blc;
+                  border: 1px solid $blc;
+                  transition: ease-in .5s;
+                }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner-rapper {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .banner-wrapper {
+        text-align: center;
+        width: 100%;
+
+        h1 {
+            width: 100%;
+            font-size: 2.5rem;
+            text-align: center;  
+        }
+    
+        p {
+            width: 100%;
+            font-size: 15px;
+            margin: 0 auto 1rem auto;    
+        }
+      }
+    
+
+    .description-wrapper{
+        margin: 0 auto;
+    }
+
+    .banner-wrapper .btn-wrapper {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            padding: 8px 30px;
+            font-size: 13px;
+    }
+  }
+  }
